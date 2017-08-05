@@ -63,11 +63,16 @@ public class InputManager
         return Mathf.Clamp(value, -1f, 1f);
     }
 
-    public static float GetVerticalLook()
+    public static float GetVerticalLook(bool inverted = false)
     {
         var value = Input.GetAxis(MOUSE_VERTICAL);
         value += Input.GetAxis(CONTROLLER_VERTICAL);
-        return Mathf.Clamp(value, -1f, 1f);
+        value = Mathf.Clamp(value, -1f, 1f);
+        if (!inverted)
+        {
+            value = 0 - value;
+        }
+        return value;
     }
 
     public static float GetZoom()
