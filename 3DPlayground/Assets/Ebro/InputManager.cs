@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class InputManager
 {
@@ -7,7 +8,7 @@ public class InputManager
 
     private const string MOUSE_HORIZONTAL = "Mouse X";
     private const string MOUSE_VERTICAL = "Mouse Y";
-
+    
     /// <summary>
     /// Setup Input:
     /// Name:       ControllerXView
@@ -80,3 +81,4 @@ public class InputManager
         return Input.GetAxis("Mouse ScrollWheel");
     }
 }
+

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/3rdPersonMove.unity
+- path: Assets/SpawningAgentWithNavMesh.unity
   isLoaded: 1
   isActive: 1
